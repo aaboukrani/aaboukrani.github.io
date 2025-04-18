@@ -1,3 +1,5 @@
+Omitir e ir al contenido
+Tú dijiste:
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -80,7 +82,7 @@
             <ul>
                 <li>Email: abdo@example.com</li>
                 <li>Teléfono: +123 456 7890</li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/abdo" target="_blank">linkedin.com/in/abdo</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/abdo-boukrani/" target="_blank">linkedin.com/in/abdo</a></li>
                 <li>GitHub: <a href="https://github.com/abdo" target="_blank">github.com/abdo</a></li>
             </ul>
         </div>
@@ -142,3 +144,218 @@
 
 </body>
 </html>
+ChatGPT Plus
+
+Tu código HTML está muy bien estructurado y tiene una apariencia profesional. Aquí van algunas sugerencias que podrías considerar para mejorarlo o adaptarlo según tus objetivos:
+✅ Mejores prácticas y recomendaciones
+1. Accesibilidad y SEO
+
+Agrega etiquetas alt si vas a incluir imágenes o íconos en algún momento. También podrías añadir una etiqueta <meta name="description"> para mejorar el SEO:
+
+<meta name="description" content="Currículum de Abdo Arrahman Boukrani Ichou, especialista en ciberseguridad con experiencia en análisis de vulnerabilidades y gestión de riesgos.">
+
+2. Rellenar datos faltantes
+
+    Sustituye los campos como Año, Universidad X/Y o Empresa ABC con los datos reales.
+
+    Asegúrate de tener un número razonable de años de experiencia para justificar el uso de frases como “más de X años”.
+
+3. Agregar enlaces semánticos
+
+Es buena idea usar la etiqueta <address> para los datos de contacto, por ejemplo:
+
+<address>
+    Email: <a href="mailto:abdo@example.com">abdo@example.com</a><br>
+    Teléfono: <a href="tel:+1234567890">+123 456 7890</a><br>
+</address>
+
+4. Diseño responsive
+
+Aunque ya estás usando flex-wrap, considera agregar @media queries para mejorar la visualización en pantallas más pequeñas. Un ejemplo simple:
+
+@media (max-width: 768px) {
+    .contact-info div, .skills div, .education div, .experience div {
+        flex: 1 1 100%;
+    }
+}
+
+5. Estilo de enlaces
+
+Podrías mejorar la visibilidad de los enlaces añadiendo estilos:
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+🧩 Posibles extensiones
+
+    Idiomas: Añadir una sección de idiomas si hablas más de uno (especialmente inglés).
+
+    Proyectos destacados: Una sección con proyectos o logros clave en ciberseguridad.
+
+    Soft skills: Como trabajo en equipo, pensamiento crítico, etc., si lo consideras relevante.
+
+¿Quieres que te genere una versión con estilo CSS mejorado o exportable como PDF desde navegador? También puedo ayudarte a adaptar el CV para LinkedIn o portafolios personales.
+Tú dijiste:
+AABI2025.pdf
+PDF
+quiero que lo rellenes con la información de este pdf, y que haya una opcion arriba del todo para ver las habilidades de desarrollo o las de ciberseguridad dependiendo de donde cliques
+ChatGPT Plus
+
+He integrado toda la información de tu PDF en un CV HTML interactivo. Arriba del todo puedes alternar entre habilidades de desarrollo y habilidades de ciberseguridad mediante botones. Si quieres que el diseño sea más atractivo, responsivo o convertirlo en PDF, puedo ayudarte también con eso. ¿Te gustaría aplicar algún estilo visual adicional o preparar una versión imprimible?
+Tú dijiste:
+puedes poner también para meter una foto mía?
+ChatGPT Plus
+
+
+ChatGPT puede cometer errores. Considera verificar la información importante.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abdo Arrahman Boukrani Ichou</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin: 15px auto 0;
+            display: block;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .skills-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .skills-toggle button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
